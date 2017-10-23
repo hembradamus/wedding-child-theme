@@ -1,0 +1,1 @@
+jQuery(document).ready(function(){jQuery(function(n){n(".navbar").waypoint(function(){console.log("waypoint!")}),n("p").click(function(){console.log("scripts!")})})});

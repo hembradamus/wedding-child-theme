@@ -1,16 +1,15 @@
-/* -----------------------------------------------
-  *SITE-WIDE STYLES
------------------------------------------------ */
+/*@media (min-width: 576px) { }
+@media (min-width: 768px) { }
+@media (min-width: 992px) { }
+@media (min-width: 1200px) { }
+*/
 
 a{
-  &:hover{ text-decoration: none; }
+  &:hover{
+    text-decoration: none;
+  }
 }
 
-/* -----------------------------------------------
-  *CUSTOM SITE LOGO
------------------------------------------------ */
-
-// WORDPRESS ADMIN BAR SPACING
 body{
   #wrapper-navbar {
     position: fixed;
@@ -26,24 +25,14 @@ body{
     #wrapper-navbar{ top: $desktop-adminbar; }}
 }
 
-// CENTERED DESKTOP SITE ICON
-#nav_desktop{
-  display: none;
-  text-align: center;
-}
-    @media (min-width: $laptop) {
-      #nav_desktop { display: block; }
-      #nav_mobile { display: none; }
-      #main-menu{ margin: 0 auto; }
-    }
 
 #site-head{
   background: $white;
 }
 
-// SVG LOGO
 #logo {
   background-color: $link;
+  color: $link;
   display: flex;
   height: 2.5rem;
   margin: 0 auto;
@@ -57,11 +46,22 @@ body{
   }
 }
 
+#nav_desktop{
+  display: none;
+  text-align: center;
+}
 
-/* -----------------------------------------------
-  *SITENAV
------------------------------------------------ */
-
+@media (min-width: 992px) {
+  #nav_desktop {
+    display: block;
+  }
+  #nav_mobile {
+    display: none;
+  }
+  #main-menu{
+    margin: 0 auto;
+  }
+}
 nav.navbar{
   background: $white;
   padding: 0;
@@ -100,9 +100,6 @@ nav.navbar{
 }
 
 
-/* -----------------------------------------------
-  *HOMEPAGE
------------------------------------------------ */
 
 body{
   #content{
@@ -121,11 +118,9 @@ body{
   }
 }
 
-
 /* -----------------------------------------------
-  *FOOTER
+  FOOTER
 ----------------------------------------------- */
-
 #wrapper-footer-full{
   background: rgba(0,0,0,.75);
   color: #ccc;
@@ -134,11 +129,6 @@ body{
   background: #23282d;
   color: #ccc;
 }
-
-
-/* -----------------------------------------------
-  *WIDGETS
------------------------------------------------ */
 
 #countdowntimer-3 {
   .widget-title{
@@ -166,7 +156,7 @@ body{
 
 
 /* -----------------------------------------------
-  *TEST
+  TEST
 ----------------------------------------------- */
 .red{
   background: red !important;

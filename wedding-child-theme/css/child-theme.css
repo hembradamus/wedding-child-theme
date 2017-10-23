@@ -1,9 +1,4 @@
 @charset "UTF-8";
-/*@media (min-width: 576px) { }
-@media (min-width: 768px) { }
-@media (min-width: 992px) { }
-@media (min-width: 1200px) { }
-*/
 /*!
  * Bootstrap v4.0.0-beta (https://getbootstrap.com)
  * Copyright 2011-2017 The Bootstrap Authors
@@ -10356,15 +10351,14 @@ a.text-dark:focus, a.text-dark:hover {
 .gallery-caption {
   display: block; }
 
-/* -----------------------------------------------
-  *SITE-WIDE STYLES
------------------------------------------------ */
+/*@media (min-width: 576px) { }
+@media (min-width: 768px) { }
+@media (min-width: 992px) { }
+@media (min-width: 1200px) { }
+*/
 a:hover {
   text-decoration: none; }
 
-/* -----------------------------------------------
-  *CUSTOM SITE LOGO
------------------------------------------------ */
 body #wrapper-navbar {
   position: fixed;
   top: 0;
@@ -10378,23 +10372,12 @@ body #page > div {
 body.admin-bar #wrapper-navbar {
   top: 32px; }
 
-#nav_desktop {
-  display: none;
-  text-align: center; }
-
-@media (min-width: 992px) {
-  #nav_desktop {
-    display: block; }
-  #nav_mobile {
-    display: none; }
-  #main-menu {
-    margin: 0 auto; } }
-
 #site-head {
   background: rgba(255, 255, 255, 0.5); }
 
 #logo {
   background-color: #64686A;
+  color: #64686A;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -10412,9 +10395,18 @@ body.admin-bar #wrapper-navbar {
     background-color: #202121;
     color: #202121; }
 
-/* -----------------------------------------------
-  *SITENAV
------------------------------------------------ */
+#nav_desktop {
+  display: none;
+  text-align: center; }
+
+@media (min-width: 992px) {
+  #nav_desktop {
+    display: block; }
+  #nav_mobile {
+    display: none; }
+  #main-menu {
+    margin: 0 auto; } }
+
 nav.navbar {
   background: rgba(255, 255, 255, 0.5);
   padding: 0; }
@@ -10456,9 +10448,6 @@ nav.navbar {
     -o-transition: opacity 1s;
     transition: opacity 1s; }
 
-/* -----------------------------------------------
-  *HOMEPAGE
------------------------------------------------ */
 body #content {
   min-height: 90vh; }
 
@@ -10475,7 +10464,7 @@ body.home #page > div {
     vertical-align: bottom; }
 
 /* -----------------------------------------------
-  *FOOTER
+  FOOTER
 ----------------------------------------------- */
 #wrapper-footer-full {
   background: rgba(0, 0, 0, 0.75);
@@ -10485,9 +10474,6 @@ body.home #page > div {
   background: #23282d;
   color: #ccc; }
 
-/* -----------------------------------------------
-  *WIDGETS
------------------------------------------------ */
 #countdowntimer-3 .widget-title {
   display: block;
   text-align: center; }
@@ -10509,7 +10495,7 @@ body.home #page > div {
   font-weight: inherit !important; }
 
 /* -----------------------------------------------
-  *TEST
+  TEST
 ----------------------------------------------- */
 .red {
   background: red !important; }

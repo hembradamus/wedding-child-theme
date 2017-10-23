@@ -3862,6 +3862,3 @@ var Popover = function ($) {
 		}, false );
 	}
 })();
-
-//@prepros-append jquery.waypoints.min.js
-//@prepros-append custom-scripts-dist.js
