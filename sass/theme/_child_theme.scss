@@ -6,6 +6,10 @@ a{
   &:hover{ text-decoration: none; }
 }
 
+@media (min-width: $desktop) {
+  body #content { max-width: 1340px; }
+}
+
 /* -----------------------------------------------
   *CUSTOM SITE LOGO
 ----------------------------------------------- */
@@ -34,11 +38,9 @@ body{
     @media (min-width: $laptop) {
       #nav_desktop { display: block; }
       #nav_mobile { display: none; }
-      #main-menu{ margin: 0 auto; }
     }
 
 #site-head{
-  background: $white;
 }
 
 // SVG LOGO
@@ -62,8 +64,14 @@ body{
   *SITENAV
 ----------------------------------------------- */
 
+#navbarNavDropdown{
+  flex-direction: row-reverse;
+}
+    @media (min-width: $laptop) {
+      #main-menu{ margin: 0 auto; }
+    }
+
 nav.navbar{
-  background: $white;
   padding: 0;
   .navbar-toggler-icon{
     background-color: $link;
@@ -110,7 +118,7 @@ body{
   }
   &.home #page > div{
     background-color: none;
-    background-image: $moo;
+    background-image: $bg-table;
     transition: background-image 0.75s ease-in-out;
     background-size: contain;
     .entry-content > p{
@@ -127,12 +135,8 @@ body{
 ----------------------------------------------- */
 
 #wrapper-footer-full{
-  background: rgba(0,0,0,.75);
-  color: #ccc;
 }
 #wrapper-footer {
-  background: #23282d;
-  color: #ccc;
 }
 
 
@@ -168,6 +172,7 @@ body{
 /* -----------------------------------------------
   *TEST
 ----------------------------------------------- */
-.red{
-  background: red !important;
+.test{
+  background: rgba(255,0,0,.75) !important;
+  border: dotted 1px rgba(0,0,255,.25);
 }

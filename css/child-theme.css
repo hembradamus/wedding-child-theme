@@ -10362,6 +10362,10 @@ a.text-dark:focus, a.text-dark:hover {
 a:hover {
   text-decoration: none; }
 
+@media (min-width: 1200px) {
+  body #content {
+    max-width: 1340px; } }
+
 /* -----------------------------------------------
   *CUSTOM SITE LOGO
 ----------------------------------------------- */
@@ -10386,12 +10390,7 @@ body.admin-bar #wrapper-navbar {
   #nav_desktop {
     display: block; }
   #nav_mobile {
-    display: none; }
-  #main-menu {
-    margin: 0 auto; } }
-
-#site-head {
-  background: rgba(255, 255, 255, 0.5); }
+    display: none; } }
 
 #logo {
   background-color: #64686A;
@@ -10415,8 +10414,18 @@ body.admin-bar #wrapper-navbar {
 /* -----------------------------------------------
   *SITENAV
 ----------------------------------------------- */
+#navbarNavDropdown {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -webkit-flex-direction: row-reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse; }
+
+@media (min-width: 992px) {
+  #main-menu {
+    margin: 0 auto; } }
+
 nav.navbar {
-  background: rgba(255, 255, 255, 0.5);
   padding: 0; }
   nav.navbar .navbar-toggler-icon {
     background-color: #64686A; }
@@ -10464,7 +10473,7 @@ body #content {
 
 body.home #page > div {
   background-color: none;
-  background-image: url("../assets/moo.png");
+  background-image: url("../assets/bg-table.jpg");
   -webkit-transition: background-image 0.75s ease-in-out;
   -o-transition: background-image 0.75s ease-in-out;
   transition: background-image 0.75s ease-in-out;
@@ -10477,14 +10486,6 @@ body.home #page > div {
 /* -----------------------------------------------
   *FOOTER
 ----------------------------------------------- */
-#wrapper-footer-full {
-  background: rgba(0, 0, 0, 0.75);
-  color: #ccc; }
-
-#wrapper-footer {
-  background: #23282d;
-  color: #ccc; }
-
 /* -----------------------------------------------
   *WIDGETS
 ----------------------------------------------- */
@@ -10511,5 +10512,6 @@ body.home #page > div {
 /* -----------------------------------------------
   *TEST
 ----------------------------------------------- */
-.red {
-  background: red !important; }
+.test {
+  background: rgba(255, 0, 0, 0.75) !important;
+  border: dotted 1px rgba(0, 0, 255, 0.25); }

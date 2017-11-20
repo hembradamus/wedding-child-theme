@@ -37,14 +37,14 @@ $container = get_theme_mod( 'understrap_container_type' );
 		<?php if ( ! has_custom_logo() ) { ?>
 
 			<?php if ( is_front_page() && is_home() ) : ?>
-				<div id="site-head">
+				<div id="site-head" class="test" >
 					<div class="container">
 						<h1 class="navbar-brand mb-0"><a rel="home" id="nav_desktop" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
 					</div>
 				</div>
 
 			<?php else : ?>
-				<div id="site-head">
+				<div id="site-head" class="test">
 					<div class="container">
 						<a class="navbar-brand" id="nav_desktop" rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"><span id="logo" /></a>
 					</div>
@@ -57,7 +57,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 			the_custom_logo();
 		} ?><!-- end custom logo -->
 
-		<nav class="navbar navbar-expand-md">
+		<nav class="navbar navbar-expand-md test">
 
 		<?php if ( 'container' == $container ) : ?>
 			<div class="container">
